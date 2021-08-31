@@ -53,14 +53,12 @@ body {
   animation: marqueeBw 140s linear infinite;
 }
 
-.logo{
-  z-index: -1;
+#svg-element {
+  z-index: 99;
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) ;  
-  content: url(./Nordklangwaves.svg);
-  
+  transform: translate(-50%, -50%) ;
 }
 
 @keyframes marqueeFw {
@@ -72,3 +70,4 @@ body {
   from { transform: translateX(-50%); }
   to { transform: translateX(0); }
 }
+

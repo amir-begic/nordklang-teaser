@@ -1,14 +1,16 @@
-var logo = document.querySelector('.logo');
-var marq = document.querySelector('.marquee');
+const svg = document.getElementById('svg-element')
+const warp = new Warp(svg)
 
-window.addEventListener('mousemove', evt => {
-    var x = evt.clientX;
-    var y = evt.clientY;
-    var transform = 'translate(-50%, -50%)'
-    transform= transform+ ' scaleX(' + y/1000 +') '+ 'scaleY('+x/1000+')';
-    
-    //logo.setAttribute('transform', transform);
-    logo.style.transform = transform;
+//warp.extrapolate(4)
+warp.transform(([ x, y ]) => [ x, y, y ])
 
-});
 
+let offset = 0
+function animate()
+{
+	warp.transform(([ x, y, oy ]) => [ x, oy + 4 * Math.sin(x / 16 + offset), oy ])
+	offset += 0.06
+	requestAnimationFrame(animate)
+}
+
+animate()
