@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f9ebcf;
-  font-size:33vh;
+  font-size:34.5vh;
   font-family:'Thunder-BlackLC', Courier, monospace;
   background: black;
   line-height: 1;
@@ -51,6 +51,20 @@ body {
   top: 75vh;
   animation: marqueeBw 140s linear infinite;
 }
+.track5 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marqueeFw 140s linear infinite;
+  visibility: hidden;
+}
+.track6 {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marqueeBw 140s linear infinite;
+  visibility: hidden;
+}
 
 #svg-element {
   z-index: 99;
@@ -70,3 +84,48 @@ body {
   to { transform: translateX(0); }
 }
 
+@media screen and (max-width: 800px) {
+  body{
+    font-size: 23vh;
+  }
+  .track2 {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    top: 16.67vh;
+    animation: marqueeBw 140s linear infinite;
+  }
+  .track3 {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    top: 33.33vh;
+    animation: marqueeFw 140s linear infinite;
+  }
+  .track4 {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    top: 50vh;
+    animation: marqueeBw 140s linear infinite;
+  }
+  .track5 {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    top: 66.66vh;
+    animation: marqueeFw 140s linear infinite;
+    visibility: visible;
+  }
+  .track6{
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    top: 83.33vh;
+    animation: marqueeBw 140s linear infinite;
+    visibility: visible;
+  }
+  #svg-element{
+    height: 140%;
+  }
+}
