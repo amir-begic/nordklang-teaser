@@ -28,6 +28,8 @@ body {
   white-space: nowrap;
   will-change: transform;
   top: 0vh;
+  -moz-animation:marqueeFw 140s linear infinite;
+  -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
 }
 .track2 {
@@ -35,6 +37,8 @@ body {
   white-space: nowrap;
   will-change: transform;
   top: 25vh;
+  -moz-animation:marqueeBw 140s linear infinite;
+  -webkit-animation: marqueeBw 140s linear infinite;
   animation: marqueeBw 140s linear infinite;
 }
 .track3 {
@@ -42,6 +46,8 @@ body {
   white-space: nowrap;
   will-change: transform;
   top: 50vh;
+  -moz-animation:marqueeFw 140s linear infinite;
+  -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
 }
 .track4 {
@@ -49,12 +55,16 @@ body {
   white-space: nowrap;
   will-change: transform;
   top: 75vh;
+  -moz-animation:marqueeBw 140s linear infinite;
+  -webkit-animation: marqueeBw 140s linear infinite;
   animation: marqueeBw 140s linear infinite;
 }
 .track5 {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
+  -moz-animation:marqueeFw 140s linear infinite;
+  -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
   visibility: hidden;
 }
@@ -62,6 +72,8 @@ body {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
+  -moz-animation:marqueeBw 140s linear infinite;
+  -webkit-animation: marqueeBw 140s linear infinite;
   animation: marqueeBw 140s linear infinite;
   visibility: hidden;
 }
@@ -74,11 +86,30 @@ body {
   transform: translate(-46%, -50%) ;
 }
 
+@-webkit-keyframes marqueeFw{
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@-moz-keyframes marqueeFw{
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 @keyframes marqueeFw {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 
+@-webkit-keyframes marqueeBw{
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@-moz-keyframes marqueeBw{
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
 @keyframes marqueeBw {
   from { transform: translateX(-50%); }
   to { transform: translateX(0); }
@@ -93,6 +124,8 @@ body {
     white-space: nowrap;
     will-change: transform;
     top: 16.67vh;
+    -moz-animation:marqueeBw 140s linear infinite;
+    -webkit-animation: marqueeBw 140s linear infinite;
     animation: marqueeBw 140s linear infinite;
   }
   .track3 {
@@ -100,6 +133,8 @@ body {
     white-space: nowrap;
     will-change: transform;
     top: 33.33vh;
+    -moz-animation:marqueeFw 140s linear infinite;
+    -webkit-animation: marqueeFw 140s linear infinite;
     animation: marqueeFw 140s linear infinite;
   }
   .track4 {
@@ -107,6 +142,8 @@ body {
     white-space: nowrap;
     will-change: transform;
     top: 50vh;
+    -moz-animation:marqueeBw 140s linear infinite;
+    -webkit-animation: marqueeBw 140s linear infinite;
     animation: marqueeBw 140s linear infinite;
   }
   .track5 {
@@ -114,6 +151,8 @@ body {
     white-space: nowrap;
     will-change: transform;
     top: 66.66vh;
+    -moz-animation:marqueeFw 140s linear infinite;
+    -webkit-animation: marqueeFw 140s linear infinite;
     animation: marqueeFw 140s linear infinite;
     visibility: visible;
   }
@@ -122,6 +161,8 @@ body {
     white-space: nowrap;
     will-change: transform;
     top: 83.33vh;
+    -moz-animation:marqueeBw 140s linear infinite;
+    -webkit-animation: marqueeBw 140s linear infinite;
     animation: marqueeBw 140s linear infinite;
     visibility: visible;
   }
