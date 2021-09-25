@@ -3,7 +3,9 @@ const warp = new Warp(svg)
 
 warp.extrapolate(2)
 warp.transform(([ x, y ]) => [ x, y, y ])
-
+setTimeout(function(){
+    document.body.className="";
+},20);
 
 let offset = 0
 function animate()

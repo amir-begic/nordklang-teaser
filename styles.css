@@ -4,6 +4,16 @@
          url('Thunder-BlackLC.woff') format('woff');
 }
 
+@keyframes marqueeFw {
+  from { transform: translate3d(0,0,0); }
+  to { transform: translate3d(-50%,0,0); }
+}
+
+@keyframes marqueeBw {
+  from { transform: translate3d(-50%,0,0); }
+  to { transform: translate3d(0,0,0); }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +22,12 @@ body {
   font-family:'Thunder-BlackLC', Courier, monospace;
   background: #0066ff;
   line-height: 1;
+}
+
+body.preload *{
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
 }
 
 .marquee {
@@ -72,16 +88,6 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-46%, -50%) ;
-}
-
-@keyframes marqueeFw {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@keyframes marqueeBw {
-  from { transform: translateX(-50%); }
-  to { transform: translateX(0); }
 }
 
 @media screen and (max-width: 800px) {
