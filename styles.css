@@ -29,7 +29,10 @@ body.preload *{
   -webkit-animation-duration: 0s !important;
   transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
 }
-
+.logosvg{
+  position:relative;
+  height: 100%;
+}
 .marquee {
   position: relative;
   width: 100vw;
@@ -96,11 +99,11 @@ body.preload *{
 
 #svg-element {
   z-index: 99;
-  position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-46%, -50%);
-  height: 140%;
+  transform: translate3d(-46%, -50%, 0) scale3d(0.75, 0.75, 1);
+  position:absolute;
+  overflow: visible;
 }
 
 @media screen and (max-width: 800px) {
@@ -154,7 +157,7 @@ body.preload *{
     animation: marqueeBw 140s linear infinite;
     visibility: visible;
   }
-  #svg-element{
-    height: 100%;
+  #svg-element {
+    transform: translate3d(-46%, -50%, 0) scale3d(1.75, 1.75, 1);
   }
 }

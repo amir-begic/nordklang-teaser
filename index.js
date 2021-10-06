@@ -1,7 +1,6 @@
 const svg = document.getElementById('svg-element')
 const warp = new Warp(svg)
 
-warp.extrapolate(2)
 warp.transform(([ x, y ]) => [ x, y, y ])
 setTimeout(function(){
     document.body.className="";
