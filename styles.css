@@ -101,7 +101,7 @@ body.preload *{
   z-index: 99;
   left: 50%;
   top: 50%;
-  transform: translate3d(-46%, -50%, 0) scale3d(0.75, 0.75, 1);
+  transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
   position:absolute;
   overflow: visible;
 }
