@@ -158,6 +158,6 @@ body.preload *{
     visibility: visible;
   }
   #svg-element {
-    transform: translate3d(-46%, -50%, 0) scale3d(1, 1, 1);
+    transform: translate3d(-50%, -50%, 0) scale3d(1.25, 1.25  , 1);
   }
 }
