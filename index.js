@@ -2,7 +2,7 @@ const svg = document.getElementById('svg-element')
 const warp = new Warp(svg)
 
 warp.transform(([ x, y ]) => [ x, y, y ])
-setTimeout(function(){	
+window.addEventListener('load', (event) => {
 	var classOne    = document.querySelector(".track");
 	var classTwo    = document.querySelector(".track2");
 	var classThree  = document.querySelector(".track3");
@@ -16,7 +16,7 @@ setTimeout(function(){
 	el.classList.remove("paused")
 	})
 
-},40);
+});
 
 let offset = 0
 function animate()
