@@ -42,6 +42,13 @@ body.preload *{
   overflow-y: hidden;
 }
 
+.paused{
+  -webkit-animation-play-state:paused !important;
+  -moz-animation-play-state:paused !important;
+  -o-animation-play-state:paused !important; 
+  animation-play-state:paused !important;
+}
+
 .track {
   position: absolute;
   white-space: nowrap;
