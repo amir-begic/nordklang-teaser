@@ -31,7 +31,7 @@ window.addEventListener('orientationchange', function () {
 	  allClasses.forEach(function(el) {
 		el.classList.remove("paused")
 	})
-    }, 10);
+    }, 120);
 	
   });
 
