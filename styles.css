@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f9ebcf;
-  font-size:34.5vh;
+  font-size:33vh;
   font-family:'Thunder-BlackLC', Courier, monospace;
   background: #0066FF;
   line-height: 1;
@@ -46,7 +46,7 @@ body.preload *{
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  top: 0vh;
+  top: -0.5vh;
   -moz-animation:marqueeFw 140s linear infinite;
   -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
@@ -108,7 +108,7 @@ body.preload *{
 
 @media screen and (max-width: 800px) {
   body{
-    font-size: 23vh;
+    font-size: 22vh;
   }
   .track2 {
     position: absolute;
