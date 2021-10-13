@@ -108,55 +108,27 @@ body {
   overflow: visible;
 }
 
-@media screen and (max-width: 800px) {
+@media screen 
+  and (max-width: 1200px)
+  and (orientation: portrait)  {
   body{
     font-size: 22vh;
   }
   .track2 {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
     top: 16.67vh;
-    -moz-animation:marqueeBw 140s linear infinite;
-    -webkit-animation: marqueeBw 140s linear infinite;
-    animation: marqueeBw 140s linear infinite;
   }
   .track3 {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
     top: 33.33vh;
-    -moz-animation:marqueeFw 140s linear infinite;
-    -webkit-animation: marqueeFw 140s linear infinite;
-    animation: marqueeFw 140s linear infinite;
   }
   .track4 {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
     top: 50vh;
-    -moz-animation:marqueeBw 140s linear infinite;
-    -webkit-animation: marqueeBw 140s linear infinite;
-    animation: marqueeBw 140s linear infinite;
   }
   .track5 {
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
     top: 66.66vh;
-    -moz-animation:marqueeFw 140s linear infinite;
-    -webkit-animation: marqueeFw 140s linear infinite;
-    animation: marqueeFw 140s linear infinite;
     visibility: visible;
   }
   .track6{
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
     top: 83.33vh;
-    -moz-animation:marqueeBw 140s linear infinite;
-    -webkit-animation: marqueeBw 140s linear infinite;
-    animation: marqueeBw 140s linear infinite;
     visibility: visible;
   }
   #svg-element {

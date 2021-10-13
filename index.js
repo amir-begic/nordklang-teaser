@@ -18,6 +18,15 @@ window.addEventListener('load', (event) => {
 
 });
 
+window.addEventListener('orientationchange', function () {
+    var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
+    document.body.style.display='none';
+	console.log("gogo")
+    setTimeout(function () {
+      document.body.style.display = originalBodyStyle;
+    }, 10);
+  });
+
 let offset = 0
 function animate()
 {
