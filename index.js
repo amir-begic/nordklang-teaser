@@ -21,17 +21,19 @@ window.addEventListener('load', (event) => {
 });
 
 window.addEventListener('orientationchange', function () {
-    var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
-    document.body.style.display='none';
+    //var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
+    //document.body.style.display='none';
 	allClasses.forEach(function(el) {
+		console.log("paused")
 		el.classList.add("paused")
 		})
     setTimeout(function () {
-      document.body.style.display = originalBodyStyle;
+      //document.body.style.display = originalBodyStyle;
 	  allClasses.forEach(function(el) {
 		el.classList.remove("paused")
+		console.log("unpaused")
 	})
-    }, 120);
+    }, 10);
 	
   });
 
