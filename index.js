@@ -2,9 +2,7 @@ const svg = document.getElementById('svg-element')
 const warp = new Warp(svg)
 
 warp.transform(([ x, y ]) => [ x, y, y ])
-setTimeout(function(){
-    document.body.className="";
-	
+setTimeout(function(){	
 	var classOne    = document.querySelector(".track");
 	var classTwo    = document.querySelector(".track2");
 	var classThree  = document.querySelector(".track3");
