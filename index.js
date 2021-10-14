@@ -12,16 +12,16 @@ var classSix   = document.querySelector(".track6");
 var allClasses = [classOne, classTwo, classThree, classFour, classFive, classSix];
 
 warp.transform(([ x, y ]) => [ x, y, y ])
-window.addEventListener('load', (event) => {
+// window.addEventListener('load', (event) => {
 
 	
-		//document.body.style.display = originalBodyStyle;
-		allClasses.forEach( el => {
-		  el.classList.remove("paused")
-		  console.log("unpaused")
-	  })
+// 		//document.body.style.display = originalBodyStyle;
+// 		allClasses.forEach( el => {
+// 		  el.classList.remove("paused")
+// 		  console.log("unpaused")
+// 	  })
 
-});
+// });
 
 window.addEventListener('resize', (event) => {
 	setTimeout( () => {
