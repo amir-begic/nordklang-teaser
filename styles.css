@@ -10,15 +10,15 @@
     -webkit-transform: translate3d(0,0,0); 
   }
   to {
-    transform: translate3d(-50%,0,0); 
-    -webkit-transform: translate3d(-50%,0,0);
+    transform: translate3d(-20%,0,0); 
+    -webkit-transform: translate3d(-20%,0,0);
   }
 }
 
 @keyframes marqueeBw {
   from { 
-    transform: translate3d(-50%,0,0); 
-    -webkit-transform: translate3d(-50%,0,0); 
+    transform: translate3d(-20%,0,0); 
+    -webkit-transform: translate3d(-20%,0,0); 
   }
   to { 
     transform: translate3d(0,0,0);
@@ -60,53 +60,53 @@ body {
   white-space: nowrap;
   will-change: transform;
   top: -0.5vh;
-  -moz-animation:marqueeFw 140s linear infinite;
-  -webkit-animation: marqueeFw 140s linear infinite;
-  animation: marqueeFw 140s linear infinite;
+  -moz-animation:marqueeFw 60s linear infinite;
+  -webkit-animation: marqueeFw 60s linear infinite;
+  animation: marqueeFw 60s linear infinite;
 }
 .track2 {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
   top: 25vh;
-  -moz-animation:marqueeBw 140s linear infinite;
-  -webkit-animation: marqueeBw 140s linear infinite;
-  animation: marqueeBw 140s linear infinite;
+  -moz-animation:marqueeBw 60s linear infinite;
+  -webkit-animation: marqueeBw 60s linear infinite;
+  animation: marqueeBw 60s linear infinite;
 }
 .track3 {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
   top: 50vh;
-  -moz-animation:marqueeFw 140s linear infinite;
-  -webkit-animation: marqueeFw 140s linear infinite;
-  animation: marqueeFw 140s linear infinite;
+  -moz-animation:marqueeFw 60s linear infinite;
+  -webkit-animation: marqueeFw 60s linear infinite;
+  animation: marqueeFw 60s linear infinite;
 }
 .track4 {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
   top: 75vh;
-  -moz-animation:marqueeBw 140s linear infinite;
-  -webkit-animation: marqueeBw 140s linear infinite;
-  animation: marqueeBw 140s linear infinite;
+  -moz-animation:marqueeBw 60s linear infinite;
+  -webkit-animation: marqueeBw 60s linear infinite;
+  animation: marqueeBw 60s linear infinite;
 }
 .track5 {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  -moz-animation:marqueeFw 140s linear infinite;
-  -webkit-animation: marqueeFw 140s linear infinite;
-  animation: marqueeFw 140s linear infinite;
+  -moz-animation:marqueeFw 60s linear infinite;
+  -webkit-animation: marqueeFw 60s linear infinite;
+  animation: marqueeFw 60s linear infinite;
   visibility: hidden;
 }
 .track6 {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  -moz-animation:marqueeBw 140s linear infinite;
-  -webkit-animation: marqueeBw 140s linear infinite;
-  animation: marqueeBw 140s linear infinite;
+  -moz-animation:marqueeBw 60s linear infinite;
+  -webkit-animation: marqueeBw 60s linear infinite;
+  animation: marqueeBw 60s linear infinite;
   visibility: hidden;
 }
 
