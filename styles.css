@@ -5,37 +5,60 @@
 }
 
 @-webkit-keyframes marqueeFw {
-  from { 
+  0% { 
     -webkit-transform: translate3d(0,0,0);  }
-  to { 
+  100% { 
     -webkit-transform: translate3d(-50%,0,0); }
 }
 
 @-webkit-keyframes marqueeBw {
-  from { 
+  0% { 
     -webkit-transform: translate3d(-50%,0,0); 
   }
-  to {
+  100% {
     -webkit-transform: translate3d(0,0,0);
    }
   }
 
+  @-moz-keyframes marqueeFw {
+    0% { 
+      -moz-transform: translate3d(0,0,0);  }
+    100% { 
+      -moz-transform: translate3d(-50%,0,0); }
+  }
+  
+  @-moz-keyframes marqueeBw {
+    0% { 
+      -moz-transform: translate3d(-50%,0,0); 
+    }
+    100% {
+      -moz-transform: translate3d(0,0,0);
+     }
+    }
+
 @keyframes marqueeFw {
   from { 
     transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
   }
+  
   to {
-    transform: translate3d(-50%,0,0); 
+    transform: translate3d(-50%,0,0);
+    -webkit-transform: translate3d(-50%,0,0); 
   }
 }
 
 @keyframes marqueeBw {
   from { 
     transform: translate3d(-50%,0,0); 
+    -webkit-transform: translate3d(-50%,0,0); 
   }
+  
   to { 
     transform: translate3d(0,0,0);
-   }
+    -webkit-transform: translate3d(0,0,0);
+  }
+   
 }
 
 body {
@@ -71,44 +94,39 @@ body {
 .track {
   position: absolute;
   white-space: nowrap;
-  will-change: transform;
   top: -0.5vh;
-  -moz-animation:marqueeFw 140s linear infinite;
+  -moz-animation: marqueeFw 140s linear infinite;
   -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
 }
 .track2 {
   position: absolute;
   white-space: nowrap;
-  will-change: transform;
   top: 25vh;
-  -moz-animation:marqueeBw 140s linear infinite;
+  -moz-animation: marqueeBw 140s linear infinite;
   -webkit-animation: marqueeBw 140s linear infinite;
   animation: marqueeBw 140s linear infinite;
 }
 .track3 {
   position: absolute;
   white-space: nowrap;
-  will-change: transform;
   top: 50vh;
-  -moz-animation:marqueeFw 140s linear infinite;
+  -moz-animation: marqueeFw 140s linear infinite;
   -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
 }
 .track4 {
   position: absolute;
   white-space: nowrap;
-  will-change: transform;
   top: 75vh;
-  -moz-animation:marqueeBw 140s linear infinite;
+  -moz-animation: marqueeBw 140s linear infinite;
   -webkit-animation: marqueeBw 140s linear infinite;
   animation: marqueeBw 140s linear infinite;
 }
 .track5 {
   position: absolute;
   white-space: nowrap;
-  will-change: transform;
-  -moz-animation:marqueeFw 140s linear infinite;
+  -moz-animation: marqueeFw 140s linear infinite;
   -webkit-animation: marqueeFw 140s linear infinite;
   animation: marqueeFw 140s linear infinite;
   visibility: hidden;
@@ -116,8 +134,7 @@ body {
 .track6 {
   position: absolute;
   white-space: nowrap;
-  will-change: transform;
-  -moz-animation:marqueeBw 140s linear infinite;
+  -moz-animation: marqueeBw 140s linear infinite;
   -webkit-animation: marqueeBw 140s linear infinite;
   animation: marqueeBw 140s linear infinite;
   visibility: hidden;
@@ -128,6 +145,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
+  -webkit-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
+  -moz-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
   position:absolute;
   overflow: visible;
 }
@@ -157,5 +176,7 @@ body {
   }
   #svg-element {
     transform: translate3d(-50%, -50%, 0) scale3d(1.25, 1.25, 1);
+    -webkit-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
+    -moz-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
   }
 }
