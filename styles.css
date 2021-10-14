@@ -20,22 +20,6 @@
    }
   }
 
-  @-moz-keyframes marqueeFw {
-    0% { 
-      -moz-transform: translate3d(0,0,0);  }
-    100% { 
-      -moz-transform: translate3d(-50%,0,0); }
-  }
-  
-  @-moz-keyframes marqueeBw {
-    0% { 
-      -moz-transform: translate3d(-50%,0,0); 
-    }
-    100% {
-      -moz-transform: translate3d(0,0,0);
-     }
-    }
-
 @keyframes marqueeFw {
   from { 
     transform: translate3d(0,0,0);
@@ -146,8 +130,7 @@ body {
   top: 50%;
   transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
   -webkit-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
-  -moz-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
-  position:absolute;
+  position: absolute;
   overflow: visible;
 }
 
