@@ -63,6 +63,7 @@ body {
   -moz-animation:marqueeFw 60s linear infinite;
   -webkit-animation: marqueeFw 60s linear infinite;
   animation: marqueeFw 60s linear infinite;
+  animation-delay: 20ms;
 }
 .track2 {
   position: absolute;
@@ -72,6 +73,7 @@ body {
   -moz-animation:marqueeBw 60s linear infinite;
   -webkit-animation: marqueeBw 60s linear infinite;
   animation: marqueeBw 60s linear infinite;
+  animation-delay: 20ms;
 }
 .track3 {
   position: absolute;
@@ -81,6 +83,7 @@ body {
   -moz-animation:marqueeFw 60s linear infinite;
   -webkit-animation: marqueeFw 60s linear infinite;
   animation: marqueeFw 60s linear infinite;
+  animation-delay: 20ms;
 }
 .track4 {
   position: absolute;
@@ -90,6 +93,7 @@ body {
   -moz-animation:marqueeBw 60s linear infinite;
   -webkit-animation: marqueeBw 60s linear infinite;
   animation: marqueeBw 60s linear infinite;
+  animation-delay: 20ms;
 }
 .track5 {
   position: absolute;
@@ -99,6 +103,7 @@ body {
   -webkit-animation: marqueeFw 60s linear infinite;
   animation: marqueeFw 60s linear infinite;
   visibility: hidden;
+  animation-delay: 20ms;
 }
 .track6 {
   position: absolute;
@@ -108,6 +113,7 @@ body {
   -webkit-animation: marqueeBw 60s linear infinite;
   animation: marqueeBw 60s linear infinite;
   visibility: hidden;
+  animation-delay: 20ms;
 }
 
 #svg-element {
