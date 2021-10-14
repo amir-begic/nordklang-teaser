@@ -29,7 +29,7 @@ function pauseMarquee(timeout){
 
 
 window.addEventListener('load', () => {
-	startMarquee(100);
+	startMarquee(200);
 });
 
 window.addEventListener('resize', () => {
