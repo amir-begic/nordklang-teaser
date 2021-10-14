@@ -1,6 +1,6 @@
 const svg = document.getElementById('svg-element')
 const warp = new Warp(svg)
-
+warp.transform(([ x, y ]) => [ x, y, y ])
 
 var classOne    = document.querySelector(".track");
 var classTwo    = document.querySelector(".track2");
@@ -11,44 +11,34 @@ var classSix   = document.querySelector(".track6");
 
 var allClasses = [classOne, classTwo, classThree, classFour, classFive, classSix];
 
-warp.transform(([ x, y ]) => [ x, y, y ])
-window.addEventListener('load', (event) => {
-
+function startMarquee(timeout){
 	setTimeout( () => {
-		//document.body.style.display = originalBodyStyle;
-		allClasses.forEach( el => {
+		allClasses.forEach( (el) => {
 		  el.classList.remove("paused")
-		  console.log("unpaused")
 	  })
+    }, timeout);
+}
 
-    }, 100);
+function pauseMarquee(timeout){
+	setTimeout( () => {
+		allClasses.forEach( (el) => {
+		  el.classList.add("paused")
+	  })
+    }, 0);
+}
 
+
+window.addEventListener('load', () => {
+	startMarquee(100);
 });
 
-window.addEventListener('resize', (event) => {
-	setTimeout( () => {
-		allClasses.forEach(function(el) {
-		  el.classList.remove("paused")
-		  console.log("unpaused")
-	  })
-	  }, 10);
+window.addEventListener('resize', () => {
+	pauseMarquee(0);
+	startMarquee(40);
 })
 
-window.addEventListener('orientationchange', function () {
-    //var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
-    //document.body.style.display='none';
-	allClasses.forEach(function(el) {
-		console.log("paused")
-		el.classList.add("paused")
-		})
-    setTimeout( () => {
-      //document.body.style.display = originalBodyStyle;
-	  allClasses.forEach(function(el) {
-		el.classList.remove("paused")
-		console.log("unpaused")
-	})
-    }, 10);
-	
+window.addEventListener('orientationchange', () => {
+	startMarquee(40);
   });
 
 let offset = 0

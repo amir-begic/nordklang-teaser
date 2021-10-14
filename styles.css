@@ -95,48 +95,48 @@ body {
   position: absolute;
   white-space: nowrap;
   top: -0.5vh;
-  -moz-animation: marqueeFw 140s linear infinite;
-  -webkit-animation: marqueeFw 140s linear infinite;
-  animation: marqueeFw 140s linear infinite;
+  -moz-animation: marqueeFw 100s linear infinite;
+  -webkit-animation: marqueeFw 100s linear infinite;
+  animation: marqueeFw 100s linear infinite;
 }
 .track2 {
   position: absolute;
   white-space: nowrap;
   top: 25vh;
-  -moz-animation: marqueeBw 140s linear infinite;
-  -webkit-animation: marqueeBw 140s linear infinite;
-  animation: marqueeBw 140s linear infinite;
+  -moz-animation: marqueeBw 100s linear infinite;
+  -webkit-animation: marqueeBw 100s linear infinite;
+  animation: marqueeBw 100s linear infinite;
 }
 .track3 {
   position: absolute;
   white-space: nowrap;
   top: 50vh;
-  -moz-animation: marqueeFw 140s linear infinite;
-  -webkit-animation: marqueeFw 140s linear infinite;
-  animation: marqueeFw 140s linear infinite;
+  -moz-animation: marqueeFw 100s linear infinite;
+  -webkit-animation: marqueeFw 100s linear infinite;
+  animation: marqueeFw 100s linear infinite;
 }
 .track4 {
   position: absolute;
   white-space: nowrap;
   top: 75vh;
-  -moz-animation: marqueeBw 140s linear infinite;
-  -webkit-animation: marqueeBw 140s linear infinite;
-  animation: marqueeBw 140s linear infinite;
+  -moz-animation: marqueeBw 100s linear infinite;
+  -webkit-animation: marqueeBw 100s linear infinite;
+  animation: marqueeBw 100s linear infinite;
 }
 .track5 {
   position: absolute;
   white-space: nowrap;
-  -moz-animation: marqueeFw 140s linear infinite;
-  -webkit-animation: marqueeFw 140s linear infinite;
-  animation: marqueeFw 140s linear infinite;
+  -moz-animation: marqueeFw 100s linear infinite;
+  -webkit-animation: marqueeFw 100s linear infinite;
+  animation: marqueeFw 100s linear infinite;
   visibility: hidden;
 }
 .track6 {
   position: absolute;
   white-space: nowrap;
-  -moz-animation: marqueeBw 140s linear infinite;
-  -webkit-animation: marqueeBw 140s linear infinite;
-  animation: marqueeBw 140s linear infinite;
+  -moz-animation: marqueeBw 100s linear infinite;
+  -webkit-animation: marqueeBw 100s linear infinite;
+  animation: marqueeBw 100s linear infinite;
   visibility: hidden;
 }
 
