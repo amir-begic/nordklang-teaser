@@ -14,13 +14,12 @@ var allClasses = [classOne, classTwo, classThree, classFour, classFive, classSix
 warp.transform(([ x, y ]) => [ x, y, y ])
 window.addEventListener('load', (event) => {
 
-	setTimeout( () => {
+	
 		//document.body.style.display = originalBodyStyle;
-		allClasses.forEach(function(el) {
+		allClasses.forEach( el => {
 		  el.classList.remove("paused")
 		  console.log("unpaused")
 	  })
-	  }, 10);
 
 });
 
