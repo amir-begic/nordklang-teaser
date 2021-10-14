@@ -4,25 +4,37 @@
          url('Thunder-BlackLC.woff') format('woff');
 }
 
-@keyframes marqueeFw {
+@-webkit-keyframes marqueeFw {
   from { 
-    transform: translateX(0);
-    -webkit-transform: translateX(0); 
+    -webkit-transform: translate3d(0,0,0);  }
+  to { 
+    -webkit-transform: translate3d(-50%,0,0); }
+}
+
+@-webkit-keyframes marqueeBw {
+  from { 
+    -webkit-transform: translate3d(-50%,0,0); 
   }
   to {
-    transform: translateX(-50%); 
-    -webkit-transform: translateX(-50%);
+    -webkit-transform: translate3d(0,0,0);
+   }
+  }
+
+@keyframes marqueeFw {
+  from { 
+    transform: translate3d(0,0,0);
+  }
+  to {
+    transform: translate3d(-50%,0,0); 
   }
 }
 
 @keyframes marqueeBw {
   from { 
-    transform: translateX(-50%); 
-    -webkit-transform: translateX(-50%); 
+    transform: translate3d(-50%,0,0); 
   }
   to { 
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
+    transform: translate3d(0,0,0);
    }
 }
 
