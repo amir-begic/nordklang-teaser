@@ -176,7 +176,7 @@ body {
   }
   #svg-element {
     transform: translate3d(-50%, -50%, 0) scale3d(1.25, 1.25, 1);
-    -webkit-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
-    -moz-transform: translate3d(-52%, -50%, 0) scale3d(0.75, 0.75, 1);
+    -webkit-transform: translate3d(-52%, -50%, 0) scale3d(1.25, 1.25, 1);
+    -moz-transform: translate3d(-52%, -50%, 0) scale3d(1.25, 1.25, 1);
   }
 }
