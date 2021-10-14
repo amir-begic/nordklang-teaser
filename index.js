@@ -14,11 +14,25 @@ var allClasses = [classOne, classTwo, classThree, classFour, classFive, classSix
 warp.transform(([ x, y ]) => [ x, y, y ])
 window.addEventListener('load', (event) => {
 
-	allClasses.forEach(function(el) {
-	el.classList.remove("paused")
-	})
+	setTimeout( () => {
+		//document.body.style.display = originalBodyStyle;
+		allClasses.forEach(function(el) {
+		  el.classList.remove("paused")
+		  console.log("unpaused")
+	  })
+	  }, 10);
 
 });
+
+window.addEventListener('resize', (event) => {
+	setTimeout( () => {
+		//document.body.style.display = originalBodyStyle;
+		allClasses.forEach(function(el) {
+		  el.classList.remove("paused")
+		  console.log("unpaused")
+	  })
+	  }, 10);
+})
 
 window.addEventListener('orientationchange', function () {
     //var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
@@ -27,7 +41,7 @@ window.addEventListener('orientationchange', function () {
 		console.log("paused")
 		el.classList.add("paused")
 		})
-    setTimeout(function () {
+    setTimeout( () => {
       //document.body.style.display = originalBodyStyle;
 	  allClasses.forEach(function(el) {
 		el.classList.remove("paused")
